@@ -1,0 +1,389 @@
+* {box-sizing: border-box;}
+body
+{
+    margin: 0;
+}
+.headContainer
+{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 1px 1px #000;	
+}
+header
+{
+    flex: 4;          
+}
+header h1
+{
+    color: #1717db;
+    padding-left: 2em;
+    /*font-size: 180%;*/
+    text-shadow: 0.8px 0.8px 0.8px #000;
+}
+header img
+{
+    height: 110px;
+    width: 70%;
+    padding-left: 90px;
+}
+nav
+{
+    flex: 7;    
+}
+nav ul
+{
+    list-style: none;
+    word-spacing: 70px;
+    font-size: 1.3em;
+    padding-top: 10px;
+}
+nav li
+{
+   display: inline;    
+}
+nav a
+{
+    color:#2b2bcb;
+    text-decoration: none;    
+}
+nav a:active
+{
+    color: #000;
+}
+.bannerContainer
+{   
+    display: flex;
+    width: 100%;
+    margin-top: 3px;
+}
+.bannerContainerOther
+{   
+    display: flex;     
+    height: 160px;    
+    background-size: 100%;    
+    background-repeat: no-repeat;
+    background-image: url("../images/BannerOther.jpg");
+    margin-top: 2.8px;
+    padding-top: 65px;
+    
+}
+.bannerContainerOther box1
+{   
+    flex: 8;    
+}
+.bannerContainerOther box2
+{   
+    flex: 3;     
+}
+.bannerContainerOther span
+{
+    font-size: 20px; 
+    color: #000;    
+    font-weight: bold;        
+}
+.bannerContainer img
+{
+    flex: 11;
+    width: 100%
+}
+h2
+{
+    border-bottom: 2px dashed #233d99;
+    font-size: 200%; 
+    color:#233d99;	
+    margin: 50px 15px 10px 15px;
+}
+.mainContainer1
+{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainContainer1 div
+{    
+    margin: 10px;
+    /*background-color: #dcdbed;*/
+	background-color:#fafafa;
+    padding:8px;
+}
+.mainContainer2
+{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainContainer2 div
+{    
+    margin: 10px;
+    padding:8px;
+    background-color: #fafafa;
+}
+.mainContainer1 img
+{
+    border: 2px solid #1717db;
+    transition: all 0.5s ease-in-out 0s;
+}
+.mainContainer1 img:hover
+{
+    border: 2px solid #1717db;
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+.mainContainerWork
+{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mainContainerWork div
+{    
+    margin: 10px;
+    background-color:#000;
+    opacity: 0.9;
+    border: 0 solid #000;
+    border-radius: 4px;
+}
+.mainContainerWork div img
+{    
+    max-width: 100%;
+    height:250px;
+}
+.mainContainerWork div img:hover
+{    
+    opacity: 0.7;
+}
+.mainContainerWork a
+{
+    text-decoration: none;
+}
+figcaption
+{
+    background-color: #1963f8;
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    border: 0 solid #000;
+    border-radius: 5px;
+}
+.bold
+{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.box1
+{
+    flex: 3;
+    text-align: center;
+}
+.box2
+{
+    flex: 3;
+    text-align: center;
+}
+.box3
+{
+    flex: 3;
+    text-align: center;
+}
+.box4
+{
+    flex: 3;
+    text-align: center;
+}
+.box5
+{
+    flex: 3;
+    text-align: center;
+}
+.box6
+{
+    flex: 3;
+    text-align: center;
+}
+.serviceTitle
+{
+    font-size: 22px;
+    font-weight: bold;
+    color: #1717db;
+}
+.serviceDesc
+{
+    font-size: 18px;
+    text-align: justify;
+}
+.title
+{
+    font-weight: 700;
+    letter-spacing: 0.02em;
+	font-size:20px;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.themeColor
+{
+    color: #1717db;
+    text-shadow: 0.5px 0.5px 0.5px #000; 
+}
+.details
+{
+    font-size: 20px;    
+    text-align: center;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height:80px;
+    margin-top: 20px;
+    padding-top:30px;
+}
+table
+{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border: 1px solid #000;
+}
+th
+{
+    background-color: #000;
+    color: #fff;    
+}
+td,th
+{
+    text-align: left;    
+    padding: 10px;
+    font-size: 1.2em;
+}
+tr:nth-of-type(even)
+{
+    background-color: #dcdbed;
+}
+@media only screen and (max-width:1024px)
+{
+    .mainContainer1
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainContainer2
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .bannerContainerOther
+    {   
+        padding-top: 30px;
+    }
+    .mainContainerWork
+    {
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width:768px)
+{
+    
+    .bannerContainer
+    {
+        position: absolute;
+        top:-9999px;
+        left: -9999px;
+    }
+    .bannerContainerOther
+    {
+        position: absolute;
+        top:-9999px;
+        left: -9999px;
+    }
+    
+    /* responsive header start */
+    
+        .headContainer
+        {
+            flex-direction: column;
+            box-shadow: none;
+        }
+        h1
+        {
+            text-align:center;
+            font-size: 2.5em;        
+        }
+        nav li
+        {
+            display: block;         
+
+        }
+        nav ul
+        {        
+            background-color:#dcdbed;
+        }
+        nav a
+        {
+            color: #000;
+            display: block;
+            padding: 0.2em;
+            text-align: center;
+            text-decoration: underline;
+        }
+        nav a:hover
+        {
+            text-decoration: none;
+        }
+    
+    
+    /* responsive header end */
+    
+    /* responsive table start*/
+    
+        table,thead,tbody,th,td,tr
+        {
+            display: block;
+            text-align: left;
+        }
+        thead tr
+        {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        tr
+        {
+            border: 1px solid #000;
+        }
+        td
+        {
+            border: none;
+            border-bottom: 1px solid #000;
+            position: relative;
+            padding-left: 40%;
+        }
+        td:before
+        {
+            position: absolute;
+            top:6px;
+            left: 6px;
+            padding-right: 10px;
+            white-space: nowrap;
+            width: 45%;
+        }
+        td:nth-of-type(1):before{content: "S.No"}
+        td:nth-of-type(2):before{content: "Job"}
+        td:nth-of-type(3):before{content: "Type"}
+        td:nth-of-type(4):before{content: "Vacancies"}
+        td:nth-of-type(5):before{content: "Location"}
+        td:nth-of-type(6):before{content: "Education"}
+        td:nth-of-type(7):before{content: "Apply"}
+    
+    /* responsive table end*/
+}
